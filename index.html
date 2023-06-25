@@ -376,6 +376,23 @@
           </li>
         </ul>
       </div>
+      <form class="newsletter-form">
+        <label for="user-email-newsletter" class="newsletter-text">Zapisz się do newslettera</label>
+          <input
+            id="user-email-newsletter"
+            type="email"
+            name="user-email-newsletter"
+            placeholder="E-mail"
+            class="newsletter-label">
+        <button type="submit" class="newsletter-button">
+          Zapisz się<svg
+            width="24px"
+            height="24px"
+            class="newsletter-button-svg">
+            <use href="./images/icons.svg#icon-send-newsletter"></use>
+          </svg>
+        </button>
+      </form>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -384,6 +401,46 @@
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
+        <form name="order-our-services" autocomplete="on" class="formula-modal-window">
+          <p class="form-name">Zostaw swoje dane w formularzu poniżej</p>
+          <label for="user-name" class="formula-headlines">Imię</label>
+          <div class="formula-boxes"><svg
+                width="12px"
+                height="12px"
+                class="formula-svg">
+                <use href="./images/icons.svg#icon-person-list"></use>
+              </svg>
+          <input id="user-name" name="user-name" class="input-box" required/></div>
+          <label for="user-phone" class="formula-headlines">Telefon</label>
+          <div class="formula-boxes"><svg
+                width="13px"
+                height="13px"
+                class="formula-svg">
+                <use href="./images/icons.svg#icon-phone-list"></use>
+              </svg>
+          <input id="user-phone" name="user-phone" class="input-box" required/></div>
+          <label for="user-email" class="formula-headlines">Email</label>
+          <div class="formula-boxes"><svg
+                width="15px"
+                height="12px"
+                class="formula-svg">
+                <use href="./images/icons.svg#icon-email-list"></use>
+              </svg>
+          <input id="user-email" name="user-email" class="input-box" required/></div>
+          <label for="user-comment" class="formula-headlines">Komentarz</label>
+          <div class="formula-boxes">
+          <textarea id="user-comment" name="user-comment" placeholder="Wprowadź tekst" style="resize:none" class="input-box-comment"></textarea></div>
+          <label for="user-agreements" class="checkbox-label">
+              <input id="user-agreements" type="checkbox" name="user-agreements" required>
+              <div class="checkbox-icon">
+                <svg class="svg-checkbox-tick" width="16px" height="15px">
+                <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </div>
+              <p class="checkbox-text">Oświadczam iż akceptuję <a href="#" class="checkbox-links">Regulamin</a> i <a href="#" class="checkbox-links">Politykę Prywatności.</a></p></input>
+          </label>
+          <button type="submit" class="btn-formula">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
