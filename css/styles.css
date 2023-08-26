@@ -705,14 +705,18 @@ h1 {
   border: 1px solid #2e2f4266;
   margin-bottom: 8px;
   padding-left: 38px;
+  inset: 16px;
 }
 
 .order_position {
   padding: 4px 24px 0px 24px;
+  inset: auto 0 8px 16px;
 }
 
 .order_position:focus-within {
   fill: var(--iris);
+  transition-duration: var(--default-time);
+  transition-timing-function: var(--default-timing-function);
 }
 
 .order-form-textarea {
@@ -758,6 +762,15 @@ h1 {
 .checkbox-links {
   margin-left: 4px;
   text-decoration: underline;
+}
+.checkbox-icon:checked + .form-label-two > .modal-check-icon {
+  background-color: var(--active-hover-color);
+  fill: #fff;
+  border: none;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition);
 }
 
 .order-button {
